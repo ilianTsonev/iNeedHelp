@@ -1,9 +1,16 @@
 name: i-need-help
 base: core22
-version: "first-unstable-stable"
-summary: An app that helps and learns more users for what bash is!
+version: "0.0.1TestVersion"  
+summary: An app that helps users learn more about Bash!
 description: |
-App which Helps users with (almost) every command in the Bash! It also learns the user on whatever lever they are (Example:  Beginner is someone who can install apps and echo things, Medium is someone who can create scripts but have some bad spots, Expert... Hell, they know everything)
+  An app that assists users with (almost) every command in Bash. 
+  It adapts to the user's skill level: 
+  - Beginner: Can install apps and use basic commands.
+  - Medium: Can create scripts but needs improvement in certain areas.
+  - Expert: Knows everything about Bash.
+  But if someone have a problem and just doesn't want to learn:
+  - There is gonna be a long list of most common errors
+  - The long list will also have more hard issues
 grade: stable
 confinement: strict
 apps:
