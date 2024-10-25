@@ -1,18 +1,26 @@
 name: i-need-help
 base: core22
-version: "0.0.1TestVersion"  
+version: "0.0.1TestVersion"
 summary: An app that helps users learn more about Bash!
 description: |
-  An app that assists users with (almost) every command in Bash. 
-  It adapts to the user's skill level: 
+  An app that assists users with (almost) every command in Bash.
+  It adapts to the user's skill level:
   - Beginner: Can install apps and use basic commands.
   - Medium: Can create scripts but needs improvement in certain areas.
   - Expert: Knows everything about Bash.
-  But if someone have a problem and just doesn't want to learn:
+  But if someone has a problem and just doesn't want to learn:
   - There is gonna be a long list of most common errors
   - The long list will also have more hard issues
-grade: stable
+grade: devel
 confinement: strict
+
 apps:
   i-need-help:
-    command: bin/i-need-help.sh
+    command: i-need-help.sh
+    environment:
+      LONG_LIST: $SNAP/long-list.txt
+
+parts:
+  i-need-help-part:
+    source: .
+    plugin: dump
