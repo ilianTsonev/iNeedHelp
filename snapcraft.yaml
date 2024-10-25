@@ -24,3 +24,5 @@ parts:
   i-need-help-part:
     source: .
     plugin: dump
+    override-build: |
+    craftctl default
