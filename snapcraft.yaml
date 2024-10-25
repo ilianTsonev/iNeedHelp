@@ -1,0 +1,11 @@
+name: i-need-help
+base: core22
+version: "first-unstable-stable"
+summary: An app that helps and learns more users for what bash is!
+description: |
+App which Helps users with (almost) every command in the Bash! It also learns the user on whatever lever they are (Example:  Beginner is someone who can install apps and echo things, Medium is someone who can create scripts but have some bad spots, Expert... Hell, they know everything)
+grade: stable
+confinement: strict
+apps:
+  i-need-help:
+    command: bin/i-need-help.sh
