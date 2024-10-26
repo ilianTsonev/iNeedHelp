@@ -8,21 +8,25 @@ description: |
   - Beginner: Can install apps and use basic commands.
   - Medium: Can create scripts but needs improvement in certain areas.
   - Expert: Knows everything about Bash.
+  
   But if someone has a problem and just doesn't want to learn:
-  - There is gonna be a long list of most common errors
-  - The long list will also have more hard issues
+  - There is going to be a long list of the most common errors.
+  - The long list will also have more hard issues.
+
 grade: devel
 confinement: strict
 
 apps:
   i-need-help:
-    command: i-need-help.sh
+    command: i-need-help.py
     environment:
       LONG_LIST: $SNAP/long-list.txt
 
 parts:
   i-need-help-part:
     source: .
-    plugin: dump
+    plugin: python
+    python-version: python3  
     override-build: |
-    craftctl default
+      snapcraftctl build
+      snapcraftctl install
