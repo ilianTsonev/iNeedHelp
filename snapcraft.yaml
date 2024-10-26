@@ -27,6 +27,3 @@ parts:
     source: .
     plugin: python
     python-version: python3  
-    override-build: |
-      snapcraftctl build
-      snapcraftctl install
