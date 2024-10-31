@@ -1,6 +1,6 @@
 name: i-need-help
 base: core22
-version: "0.0.1TestVersion"
+version: "0.1.2FirstAlpha"
 summary: An app that helps users learn more about Bash!
 description: |
   An app that assists users with (almost) every command in Bash.
