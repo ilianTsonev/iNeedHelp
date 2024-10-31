@@ -1,0 +1,4 @@
+# You shouldn't be here
+#yet you are here
+User-agent: *
+Disallow: /
