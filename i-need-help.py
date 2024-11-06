@@ -2,6 +2,8 @@ import random
 import time
 import os
 
+ f = open("longlist.txt", "r")
+
 print("Hello!")
 tips = [
     "DirectX? What's that? Bill Gates' new way to pump money?",
@@ -29,7 +31,11 @@ while True:  # Changed `true` to `True`
         print("Here is the full list of commands in Bash, the clear Bash:")
         time.sleep(5)
     elif e == "2" or e.lower() == "ineedhelp" or e == "HELP":  # Fixed the method call
-        print("Sure, how can I assist you?")
+        print("Sure, Here is a list of most known issues or questions for bash")
+        print(f.readline())
+        print(f.readline()) 
+        print(f.readline())
+        print(f.readline()) 
     elif e == "3":
         print("Sure. My email is pools.stock-0q@icloud.com\nIf you want a fast and cool way, my Discord is .memelian4 with the dot.")
     elif e == "q" or e == "Q" or e == "E" or e == "mmm":  # Removed the comment from this line
