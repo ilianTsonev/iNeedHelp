@@ -35,3 +35,5 @@ while True:  # Changed `true` to `True`
     elif e == "q" or e == "Q" or e == "E" or e == "mmm":  # Removed the comment from this line
         print("Exiting the program. Goodbye!")
         break  # Changed `brak` to `break`
+    else:
+        break #buddy, whatelsedoido
