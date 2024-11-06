@@ -18,9 +18,9 @@ confinement: strict
 
 apps:
   i-need-help:
-    command: i-need-help.py
+    command: python3 $SNAP/i-need-help.py
     environment:
-      LONG_LIST: $SNAP/long-list.txt
+      LONG_LIST: $SNAP/longlist.txt
 
 parts:
   i-need-help-part:
