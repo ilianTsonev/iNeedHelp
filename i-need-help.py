@@ -17,15 +17,43 @@ tips = [
     "I wanted this snap to be called iNeedHelp, not i-need-help. Snapcraft hates caps."
 ]
 
-# Select a random tip
-selected_tip = tips[random.randint(0, len(tips) - 1)]
-time.sleep(10)  # Changed from 10000 to 10 for a more reasonable wait time
-os.system("clear")  # Clear the terminal screen
-print(f"Tip of the day: {selected_tip}")
+# Use random.choice instead of randint for cleaner selection
+selected_tip = random.choice(tips)
 
-while True:  # Changed `true` to `True`
-    e = input("What do you wanna do? \n1. Learn Bash\n2. I Need Help\n3. I WANNA CONTACT YOU!\nQ, E, mmm. Escape, Quit\n")
+# Add a welcome message with the tip
+print("Welcome to iNeedHelp!")
+print(f"Tip of the day: {selected_tip}")
+time.sleep(3)  # Reduced from 10 seconds to 3 for better UX
+os.system('clear' if os.name == 'posix' else 'cls')  # Make it cross-platform
+
+while True:
+    print("\n=== iNeedHelp Menu ===")
+    print("1. Learn Bash")
+    print("2. I Need Help")
+    print("3. Contact Information")
+    print("Q. Quit")
+    
+    e = input("\nPlease select an option: ").strip().lower()
+    
     if e == "1":
+        print("\nBash Tutorial:")
+        print("Loading command reference...")
+        time.sleep(2)
+        # TODO: Add actual bash commands here
+        
+    elif e in ["2", "ineedhelp", "help"]:
+        print("Sure, how can I assist you?")
+    elif e == "3":
+        print("\nContact Information:")
+        print("Email: pools.stock-0q@icloud.com")
+        print("Discord: .memelian4")
+        
+    elif e in ["q", "quit", "exit"]:
+        print("\nThank you for using iNeedHelp! Goodbye!")
+        break
+        
+    else:
+        print("\nInvalid option. Please try again.")
         print("Bash is quite easy.")
         time.sleep(2)  # Changed from 1000 to 2 for a more reasonable wait time
         print("Here is the full list of commands in Bash, the clear Bash:")
