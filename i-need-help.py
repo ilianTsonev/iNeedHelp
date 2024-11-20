@@ -2,7 +2,7 @@ import random
 import time
 import os
 
- f = open("longlist.txt", "r")
+f = open("longlist.txt", "r")
 
 print("Hello!")
 tips = [
@@ -12,9 +12,10 @@ tips = [
     "That snap may be the best for Ubuntu.",
     "Wine, they say. Wine is just WSL for Windows, but vice-versa.",
     "Apt is the main way to download (sudo apt install) and manage (sudo apt update & sudo apt upgrade) packages!",
-    "cp is the best tool to copy! (HAANK! HAANK! DO NOT ABREVIATE CYBERPUNK!!!)",
+    "cp is the best tool to copy! (HAANK! HAANK! DO NOT ABBREVIATE CYBERPUNK!!!)",
     "With cat, you cannot play with a cat, but rather see what a file has in it without having to open it!",
     "I wanted this snap to be called iNeedHelp, not i-need-help. Snapcraft hates caps."
+    "Fun fact of mine: I made Hackintosh work on my laptop. Possibly creating this from one." #ye i am really making from it rn
 ]
 
 # Use random.choice instead of randint for cleaner selection
