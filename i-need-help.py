@@ -15,7 +15,8 @@ tips = [
     "cp is the best tool to copy! (HAANK! HAANK! DO NOT ABBREVIATE CYBERPUNK!!!)",
     "With cat, you cannot play with a cat, but rather see what a file has in it without having to open it!",
     "I wanted this snap to be called iNeedHelp, not i-need-help. Snapcraft hates caps."
-    "Fun fact of mine: I made Hackintosh work on my laptop. Possibly creating this from one." #ye i am really making from it rn
+    "Fun fact of mine: I made Hackintosh work on my laptop. Possibly creating this from one." #ye i am really making from it rn. Actually right now no
+    "The best snap for getting software is only-the-essentials!"
 ]
 
 # Use random.choice instead of randint for cleaner selection
@@ -41,6 +42,9 @@ while True:
         print("Loading command reference...")
         time.sleep(2)
         # TODO: Add actual bash commands here
+        print("The best Command to start with is 'echo'. This command will print out anything you type after it")
+        time.sleep(4)
+        # TODO: Continue the code
         
     elif e in ["2", "ineedhelp", "help"]:
         print("Sure, how can I assist you?")
